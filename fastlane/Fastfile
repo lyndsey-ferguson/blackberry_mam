@@ -14,3 +14,13 @@ lane :mam_plist do
     export_method: 'enterprise'
   )
 end
+
+lane :mam_network_check do
+  blackberry_mam_network_check
+end
+
+lane :test do
+  mam_version
+  mam_plist
+  mam_network_check
+end

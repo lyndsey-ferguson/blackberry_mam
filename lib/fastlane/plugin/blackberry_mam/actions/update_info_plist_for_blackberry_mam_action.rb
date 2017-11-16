@@ -69,7 +69,7 @@ module Fastlane
       #####################################################
 
       def self.description
-        "This plugin will update the plist so that the built application can be deployed and managed within BlackBerry's Good Dynamics Control Center for Enterprise Mobility Management."
+        "updates the plist so that the built application can be deployed and managed within BlackBerry's Good Dynamics Control Center for Enterprise Mobility Management."
       end
 
       def self.available_options

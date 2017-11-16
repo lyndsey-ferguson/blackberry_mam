@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-blackberry_mam'
   spec.version       = Fastlane::BlackberryMam::VERSION
   spec.author        = 'Lyndsey Ferguson'
-  spec.email         = 'ldf.public@outlook.com'
+  spec.email         = 'ldf.public+github@outlook.com'
 
   spec.summary       = 'A fastlane plugin that works with Blackberry Dynamics (formerly Good Dynamics) provides Mobile Application Management'
   spec.homepage      = "https://github.com/lyndsey-ferguson/blackberry_mam"
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rake'

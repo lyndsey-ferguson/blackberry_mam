@@ -12,15 +12,16 @@ fastlane add_plugin blackberry_mam
 
 ## About blackberry_mam
 
-A fastlane plugin that works with Blackberry Dynamics (formerly Good Dynamics) provides Mobile Application Management
+A fastlane plugin that works with Blackberry Dynamics (formerly Good Dynamics) provides Mobile Application Management. It includes
+the following actions:
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+- blackberry_mam_network_check: checks to see if the required network ports for BlackBerry Dynamics are open on the network
+- blackberry_mam_version_action: checks the version of the installed Good framework
+- update_info_plist_for_blackberry_mam: updates the plist so that the built application can be deployed and managed within BlackBerry's Good Dynamics Control Center for Enterprise Mobility Management
 
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
-
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
 ## Run tests for this plugin
 
