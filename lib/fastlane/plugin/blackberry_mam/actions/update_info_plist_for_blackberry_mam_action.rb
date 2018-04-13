@@ -36,6 +36,9 @@ module Fastlane
           if good_sdk_version < Gem::Version.new('3.0.0.0')
             url_schemes.push("#{app_id}.sc")
           end
+          if good_sdk_version >= Gem::Version.new('4.0.0.140')
+            url_schemes.push("#{app_id}.sc3")
+          end
         end
         if params.values.fetch(:export_method, "app-store").casecmp("enterprise").zero?
           url_schemes.push("com.good.gd.discovery.enterprise")
