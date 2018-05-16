@@ -460,7 +460,7 @@ describe Fastlane do
 
           expect { Fastlane::FastFile.new.parse(update_info_plist_for_blackberry_mam_invalid_build_simulation_mode).runner.execute(:test) }.to(
             raise_error(FastlaneCore::Interface::FastlaneError) do |error|
-              expect(error.message).to match(/'build_simulation_mode' value must be a TrueClass! Found String instead./)
+              expect(error.message).to match(/'build_simulation_mode' value must be either `true` or `false`! Found String instead./)
             end
           )
         end
