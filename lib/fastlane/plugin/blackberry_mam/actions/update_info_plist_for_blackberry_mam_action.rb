@@ -118,10 +118,7 @@ module Fastlane
                                     env_name: "FL_UPDATE_INFO_PLIST_FOR_BLACKBERRY_MAM_BUILD_FOR_SIMULATOR",
                                     description: "True if the app should be built so that it simulates a connection to a Good Control Center server. Defaults to false",
                                     optional: true,
-                                    type: TrueClass,
-                                    verify_block: proc do |value|
-                                      UI.user_error!("Invalid value #{value}. It must either be true or false") unless [true, false].include?(value)
-                                    end,
+                                    type: Boolean,
                                     default_value: false) # the default value if the user didn't provide one
         ]
       end

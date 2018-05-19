@@ -85,7 +85,7 @@ module Fastlane
             key: :check_cloud_control,
             env_name: "FL_BLACKBERRY_MAM_NETWORK_CHECK_CLOUD_CONTROL",
             description: "API Token for BlackberryMamNetworkCheckAction",
-            type: TrueClass,
+            type: Boolean,
             default_value: true
           )
         ]
